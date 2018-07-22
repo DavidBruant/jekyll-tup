@@ -1,1 +1,2 @@
-: foreach *.md |> cat layout.html %f >> %o |> %B.html
+: foreach _posts/*.md |> cat layout.html %f >> %o |> _site/%B.html
+
