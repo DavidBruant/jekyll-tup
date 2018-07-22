@@ -1,1 +1,1 @@
-: post.md |> cat layout.html post.md >> post.html |> post.html
+: foreach *.md |> cat layout.html %f >> %o |> %B.html
